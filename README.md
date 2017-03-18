@@ -23,11 +23,23 @@ Or install it yourself as:
 
 ## Usage
 
+### Get the beginning_of_week for a locale
+
+```
+I18n.locale = :en
+I18n.beginning_of_week # => :sunday
+```
+
+OR
+
+```
+I18n.beginning_of_week(:en) # => :sunday
+```
 
 ### Set the Ruby configuration variable using the I18n.locale value or passed locale value
 
 ```
-I18n.locale = :en
+I18n.locale = :fr
 Date.beginning_of_week = I18n.beginning_of_week
 Date.beginning_of_week # => :sunday
 ```
@@ -64,7 +76,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/i18n-beginning_of_week.
+Bug reports and pull requests are welcome on GitHub at https://github.com/markedmondson/i18n-beginning_of_week.
 
 ## License
 
