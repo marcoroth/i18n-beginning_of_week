@@ -28,14 +28,14 @@ Or install it yourself as:
 
 ```
 I18n.locale = :en
-Date.beginning_of_week = Date.i18n_beginning_of_week
+Date.beginning_of_week = I18n.beginning_of_week
 Date.beginning_of_week # => :sunday
 ```
 
 OR
 
 ```
-Date.beginning_of_week = Date.i18n_beginning_of_week(:fr)
+Date.beginning_of_week = I18n.beginning_of_week(:fr)
 Date.beginning_of_week # => :monday
 ```
 
@@ -43,7 +43,7 @@ Date.beginning_of_week # => :monday
 ### Run a block with the beginning of week value set using the I18n.locale value or passed locale value
 ```
 I18n.locale = :ar
-Date.in_i18n_beginning_of_week do
+I18n.in_beginning_of_week do
   Date.beginning_of_week
 end # => :saturday
 ```
@@ -51,7 +51,7 @@ end # => :saturday
 OR
 
 ```
-Date.in_i18n_beginning_of_week(:ar) do
+I18n.in_beginning_of_week(:ar) do
   Date.beginning_of_week
 end # => :saturday
 ```
