@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "i18n/beginning_of_week"
+
+require "irb"
+IRB.start(__FILE__)
