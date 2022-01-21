@@ -33,7 +33,7 @@ module I18n
         # Get the beginning of week symbol based on the locale
         # @return [Symbol]
         def beginning_of_week(locale = I18n.locale)
-          LOCALE_DAYS[locale] || Date.beginning_of_week
+          LOCALE_DAYS[locale.to_sym] || Date.beginning_of_week
         end
 
         # Run the block in the context of the i18n beginning of the week
